@@ -1,0 +1,55 @@
+.contenedor{ /* padre */
+    background-color: aqua;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-areas: "header header header" 
+                         "nav nav nav" 
+                         "section section2 ads"
+                         "footer footer footer";
+}
+.contenedor .header{
+    background-color: azure;
+    grid-column: header;
+}
+
+.contenedor .nav{
+    background-color: blanchedalmond;
+    grid-column: nav;
+}
+
+.contenedor .section{
+    background-color: cornsilk;
+    grid-column: section;
+}
+.contenedor .section2{
+    background-color: blueviolet;
+    grid-column: section2;
+}
+
+.contenedor .ads{
+    background-color: greenyellow;
+    grid-column: ads;
+}
+
+.ads1{
+    background-color: red;
+    padding: 5px;
+    margin: 5px;
+}
+.ads2{
+    background-color: blue;
+    padding: 5px;
+    margin: 5px;
+}
+
+ .contenedor .footer{
+     background-color: coral;
+     grid-column: footer;
+ }
+
+ 
